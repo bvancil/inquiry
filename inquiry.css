@@ -1,0 +1,17 @@
+/* CSS declarations go here */
+body {
+    background-color: white;
+    color: black;
+}
+h1 {
+    color: #C0C0C0; /* silver */
+}
+.Qindex {
+    color: #CC5500; /* burnt orange */
+}
+.Qtext {
+    color: #002366; /* royal blue */
+}
+.vote {
+    color: #4169E1; /* royal blue (web) */
+}

@@ -1,0 +1,32 @@
+<head>
+  <title>inquiry</title>
+</head>
+
+<body>
+  {{loginButtons}}
+  <div class="container-fluid">
+  {{> questions}}
+  </div>
+</body>
+
+<template name="questions">
+{{#if userId}}
+<h1>Ask a question.</h1>
+<form class="form-compact">
+<input type="text" id="questionText"></input>
+<input type="button" id="questionAsk" class="btn" value="Ask"></input>
+</form>
+{{/if}}
+<h1>Consider questions.</h1>
+{{#each allQuestions}}
+<h3>
+<span class="Qindex">{{idx}}.</span>
+<span class="Qtext">{{question}}</span>
+[<span class="Qscore">{{score}}</span>]
+{{#if showArrow}}<a class="vote">&uarr;</a>{{/if}}
+</h3>
+<p>
+{{email}}
+</p>
+{{/each}}
+</template>
